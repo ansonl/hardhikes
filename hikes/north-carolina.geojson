@@ -14,6 +14,40 @@
                 "type": "Point",
                 "coordinates": [-80.907603, 36.553850]
             }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Pinnacle",
+                "type": "trail",
+                "difficulty": 1,
+                "popupContent": null,
+                "involves": ["running"],
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Trailhead",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-81.293419, 35.213628]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-81.313238, 35.206975]
+            }
         }
     ]
 }

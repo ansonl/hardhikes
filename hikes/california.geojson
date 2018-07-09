@@ -109,6 +109,119 @@
                 "type": "Point",
                 "coordinates": [-116.215168, 33.182502]
             }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Arroyo Tapiado Mud Caves (Slot Canyon)",
+                "popupContent": null,
+                "type": "canyon",
+                "difficulty": 1,
+                "involves": ["slot canyon"]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-116.183262, 32.918886]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Painted Canyon",
+                "popupContent": null,
+                "type": "canyon",
+                "difficulty": 1,
+                "involves": ["slot canyon"],
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Trailhead",
+                                    "type": "start"
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-115.999380, 33.619083]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-115.990217, 33.630091]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kelso Dunes",
+                "popupContent": null,
+                "type": "peak",
+                "difficulty": 1,
+                "involves": ["sand dunes"],
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Trailhead",
+                                    "type": "start"
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-115.699079, 34.892370]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-115.718242, 34.903296]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kaiser Peak",
+                "popupContent": null,
+                "type": "peak",
+                "difficulty": 2,
+                "involves": ["sand dunes"],
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Trailhead",
+                                    "type": "start"
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-119.173651, 37.258851]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-119.182867, 37.294668]
+            }
         }
     ]
 }

@@ -80,6 +80,12 @@ function pageReady() {
 	});
 	hhMap.addControl(locateControl);
 
+	var infoButtonControl = L.control.infoButton({
+		title: "<h1>Hard Hikes</h1>",
+		html: aboutInfo
+	})
+	hhMap.addControl(infoButtonControl)
+
 	hhMap.setView([37.0902, -95.7129], 4);
 
 	//Create hikes marker layer

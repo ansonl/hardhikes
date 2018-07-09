@@ -102,6 +102,40 @@
                 "type": "Point",
                 "coordinates": [-79.604934, 37.433523]
             }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Holiday Lake Loop Trail",
+                "type": "trail",
+                "difficulty": 1,
+                "popupContent": null,
+                "involves": ["running"],
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Trailhead",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-78.639041, 37.395006]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-78.636447, 37.396059]
+            }
         }
     ]
 }

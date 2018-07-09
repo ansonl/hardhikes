@@ -56,6 +56,108 @@
                 "type": "Point",
                 "coordinates": [-110.137137, 38.227734]
             }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Peek-a-boo Slot Canyon",
+                "popupContent": null,
+                "type": "canyon",
+                "difficulty": 1,
+                "involves": ["slot canyon"],
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                        {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Trailhead",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-111.220255, 37.476663]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-111.216836, 37.482268]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Spooky Slot Canyon",
+                "popupContent": null,
+                "type": "canyon",
+                "difficulty": 1,
+                "involves": ["slot canyon"],
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                        {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Trailhead",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-111.220255, 37.476663]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-111.208809, 37.481805]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dry Fork Slot Canyon",
+                "popupContent": "TBD",
+                "type": "canyon",
+                "difficulty": 0,
+                "involves": ["slot canyon"],
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                        {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Trailhead",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-111.220255, 37.476663]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-111.218246, 37.481628]
+            }
         }
     ]
 }

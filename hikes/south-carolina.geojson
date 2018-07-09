@@ -15,8 +15,8 @@
                             {
                                 "type": "Feature",
                                 "properties": {
-                                    "type": "start",
-                                    "popupContent": "Start"
+                                "name": "Black Mountain Campground",
+                                    "type": "start"
                                 },
                                 "geometry": {
                                     "type": "Point",
@@ -47,8 +47,8 @@
                             {
                                 "type": "Feature",
                                 "properties": {
-                                    "type": "start",
-                                    "popupContent": "Start"
+                                "name": "Trailhead",
+                                    "type": "start"
                                 },
                                 "geometry": {
                                     "type": "Point",
@@ -79,8 +79,8 @@
                             {
                                 "type": "Feature",
                                 "properties": {
-                                    "type": "start",
-                                    "popupContent": "Start"
+                                "name": "Trailhead",
+                                    "type": "start"
                                 },
                                 "geometry": {
                                     "type": "Point",
@@ -123,8 +123,8 @@
                             {
                                 "type": "Feature",
                                 "properties": {
-                                    "type": "start",
-                                    "popupContent": null
+                                "name": "Trailhead",
+                                    "type": "start"
                                 },
                                 "geometry": {
                                     "type": "Point",

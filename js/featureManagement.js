@@ -52,9 +52,7 @@ function pointToLayer(geoJsonPoint, latlng) {
 		if (geoJsonPoint.properties.type == 'start') {
 			var customIcon = L.divIcon({className: 'trailhead-icon', iconSize: new L.Point(6, 20)})
 			createdMarker = L.marker(latlng, {icon: customIcon});
-		}
-
-		if (geoJsonPoint.properties.type == 'peak') {
+		} else if (geoJsonPoint.properties.type == 'peak') { //peak icon
 			var peakClass = 'peak-icon';
 			var difficulty = 0; //default difficulty, use .peak-icon
 			//Use .peak-icon-X, where X = difficulty [1,5]
@@ -64,17 +62,24 @@ function pointToLayer(geoJsonPoint, latlng) {
 			}
 			var customIcon = L.divIcon({className: peakClass, iconSize: new L.Point(30, 14)})
 			createdMarker = L.marker(latlng, {icon: customIcon});
-		}
-
-		if (geoJsonPoint.properties.type == 'canyon') {
+		} else if (geoJsonPoint.properties.type == 'canyon') { //canyon icon
 			var peakClass = 'canyon-icon';
-			var difficulty = 0; //default difficulty, use .peak-icon
-			//Use .peak-icon-X, where X = difficulty [1,5]
 			if (geoJsonPoint.properties.difficulty && geoJsonPoint.properties.difficulty > 0 && geoJsonPoint.properties.difficulty <= 5) {
 				difficulty = geoJsonPoint.properties.difficulty;
 				peakClass = peakClass + ' canyon-icon' + (difficulty > 0 ? '-'+difficulty : '')
 			}
 			var customIcon = L.divIcon({className: peakClass, iconSize: new L.Point(25, 20)})
+			createdMarker = L.marker(latlng, {icon: customIcon});
+		} else if (geoJsonPoint.properties.type == 'cave') { //cave icon
+			var peakClass = 'cave-icon';
+			if (geoJsonPoint.properties.difficulty && geoJsonPoint.properties.difficulty > 0 && geoJsonPoint.properties.difficulty <= 5) {
+				difficulty = geoJsonPoint.properties.difficulty;
+				peakClass = peakClass + ' cave-icon' + (difficulty > 0 ? '-'+difficulty : '')
+			}
+			var customIcon = L.divIcon({className: peakClass, iconSize: new L.Point(25, 20)})
+			createdMarker = L.marker(latlng, {icon: customIcon});
+		} else { //other generic but still specified type icon
+			var customIcon = L.divIcon({className: 'generic-icon', iconSize: new L.Point(10, 20)})
 			createdMarker = L.marker(latlng, {icon: customIcon});
 		}
 	}

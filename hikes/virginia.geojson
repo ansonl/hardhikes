@@ -68,6 +68,40 @@
                 "type": "Point",
                 "coordinates": [-79.469197, 37.582566]
             }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sharp Top",
+                "type": "peak",
+                "difficulty": 1,
+                "popupContent": null,
+                "involves": ["shelter"],
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Trailhead",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-79.609614, 37.443375]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-79.604934, 37.433523]
+            }
         }
     ]
 }

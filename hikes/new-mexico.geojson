@@ -34,6 +34,73 @@
                 "type": "Point",
                 "coordinates": [-107.095782, 35.599462]
             }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "El Malpais Caves",
+                "popupContent": null,
+                "type": "cave",
+                "difficulty": 0,
+                "involves": ["rock scramble"],
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Trailhead",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-108.002995, 34.969976]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-108.002995, 34.969976]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sandia Crest",
+                "popupContent": "TBD",
+                "type": "peak",
+                "difficulty": 0,
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Trailhead",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-106.479205, 35.191779]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-106.449687, 35.210294]
+            }
         }
     ]
 }

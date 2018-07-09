@@ -1,0 +1,19 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Gully Creek Trail Loop",
+                "popupContent": null,
+                "type": "trail",
+                "difficulty": 2,
+                "involves": ["running"]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-80.907603, 36.553850]
+            }
+        }
+    ]
+}

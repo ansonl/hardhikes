@@ -16,26 +16,26 @@ function pageReady() {
 	hhMap.addLayer(backgroundTileLayer);
 
 	var osmURL = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-	var osmAttr = 'Map data from OSM';
+	var osmAttr = 'Tiles &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 	var osmLayer = L.tileLayer.offline(osmURL, {
 		attribution: osmAttr
 	});
 
 	var otmURL = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png';
-	var otmAttr = 'Map data from TopoMap';
+	var otmAttr = 'Tiles &copy;m <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)';
 	var otmLayer = L.tileLayer.offline(otmURL, {
 		maxZoom: 14,
 		attribution: otmAttr
 	});
 
 	var u4mURL = 'https://tileserver.4umaps.com/{z}/{x}/{y}.png';
-	var u4mAttr = 'Map data from 4UMaps';
+	var u4mAttr = 'Tiles &copy;m <a href="https://4umaps.com">4UMaps</a>';
 	var u4mLayer = L.tileLayer.offline(u4mURL, {
 		attribution: u4mAttr
 	});
 
 	var hbmURL = 'http://{s}.tiles.wmflabs.org/hikebike/{z}/{x}/{y}.png';
-	var hbmAttr = 'Map data from 4UMaps';
+	var hbmAttr = 'Tiles &copy;m <a href="https://hikebikemap.org">Hike Bike Map and OpenStreetMap</a>';
 	var hbmLayer = L.tileLayer.offline(hbmURL, {
 		attribution: hbmAttr,
 		errorTileUrl: 'data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=='

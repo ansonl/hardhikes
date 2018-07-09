@@ -99,19 +99,47 @@ body {
 }
 
 
-.canyon-icon-1 {
+.cave-icon {
+	content: '';
+	border-bottom: 14px solid #795548;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	box-shadow: 0px 8px 5px -5px grey;
 }
 
-.canyon-icon-2 {
+.cave-icon:before {
+	content: '';
+	position: absolute;
+	left: -1px;
+	top: 14px;
+	width: 5px;
+	height: 4px;
+
+	background: #212121;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5;
+	border-radius: 3px;
 }
 
-.canyon-icon-3 {
+.generic-icon {
+	content: '';
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-bottom: 15px solid #5D4037;
+	box-shadow: 0px 8px 5px -5px grey;
 }
 
-.canyon-icon-4 {
-}
-
-.canyon-icon-5 {
+.generic-icon:before {
+	content: '';
+	width: 20px;
+	height: 5px;
+	background-color: #2196F3;
+	position: absolute;
+	top: 8px;
+	left: -8px;
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
 }
 
 .trailhead-icon {

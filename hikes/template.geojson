@@ -1,0 +1,39 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "MOUNTAINNAME",
+                "popupContent": null,
+                "type": "peak",
+                "difficulty": DIFFICULTY1TO5,
+                "involves": ["DATA"],
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "LANDMARKNAME",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [LONGIUDE, LATITUDE]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [LONGIUDE, LATITUDE]
+            }
+        }
+    ]
+}

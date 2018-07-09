@@ -1,0 +1,114 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mission Peak",
+                "type": "peak",
+                "difficulty": 1,
+                "popupContent": null,
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Stanford Trailhead",
+                                    "type": "start"
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-121.908419, 37.504431]
+                                }
+                            },
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Ohlone Trailhead",
+                                    "type": "start"
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-121.912347, 37.527163]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-121.880513, 37.512437]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mount San Antonio - Mount Baldy",
+                "type": "peak",
+                "difficulty": 3,
+                "popupContent": null,
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Manker Flat",
+                                    "type": "start"
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-117.63115, 34.26553]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-117.6464047, 34.2891206]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Slot",
+                "popupContent": null,
+                "type": "canyon",
+                "difficulty": 1,
+                "involves": ["slot canyon"],
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Borrego Mountain Wash",
+                                    "type": "start",
+                                    "popupContent": "Proceed directly NW of parking lot."
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-116.214108, 33.182019]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-116.215168, 33.182502]
+            }
+        }
+    ]
+}

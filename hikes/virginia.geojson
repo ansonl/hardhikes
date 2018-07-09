@@ -1,0 +1,73 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Old Rag Mountain",
+                "type": "peak",
+                "difficulty": 2,
+                "popupContent": null,
+                "involves": ["rock scramble"],
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Alum Cave Bluffs Trailhead",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-78.28655, 38.57050]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-78.3141702, 38.5517905]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Devil's Marbleyard",
+                "type": "peak",
+                "difficulty": 1,
+                "popupContent": null,
+                "involves": ["rock scramble"],
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Alum Cave Bluffs Trailhead",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-79.49170, 37.57119]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-79.469197, 37.582566]
+            }
+        }
+    ]
+}

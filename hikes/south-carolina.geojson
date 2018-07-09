@@ -1,0 +1,212 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mount Mitchell",
+                "type": "peak",
+                "difficulty": 3,
+                "popupContent": null,
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "type": "start",
+                                    "popupContent": "Start"
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-82.220953, 35.751641]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-82.265122, 35.764839]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Celo Knob",
+                "type": "peak",
+                "difficulty": 2,
+                "popupContent": null,
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "type": "start",
+                                    "popupContent": "Start"
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-82.2197, 35.8384]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-82.248611, 35.852222]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Big Butt",
+                "type": "peak",
+                "difficulty": 1,
+                "popupContent": null,
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "type": "start",
+                                    "popupContent": "Start"
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-82.34790, 35.81022]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-82.3462, 35.7861]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Big Piney",
+                "type": "peak",
+                "difficulty": 1,
+                "popupContent": null,
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Little Piney",
+                                    "type": "peak",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-82.31946, 35.65182]
+                                }
+                            },
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-82.3102, 35.6490]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-82.3134, 35.6572]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Clingmans Dome",
+                "type": "peak",
+                "difficulty": 3,
+                "popupContent": null,
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Newfound Gap",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-83.42528, 35.61124]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-83.49837, 35.56285]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mount LeConte - High Top",
+                "type": "peak",
+                "difficulty": 2,
+                "popupContent": null,
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Alum Cave Bluffs Trailhead",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-83.45066, 35.62860]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-83.4368, 35.6542]
+            }
+        }
+        
+    ]
+}

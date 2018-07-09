@@ -1,0 +1,22 @@
+
+/* leaflet offline control styling */
+
+a.savetiles {
+	height: 45px !important
+}
+
+#save-control {
+	margin-top: 10px;
+	text-align: center;
+}
+
+#remove-control {
+	padding: 10px 0 0 0;
+}
+
+#storage-progress {
+	width: 100%;
+	padding-top: 5px;
+	font-size: 80%;
+	line-height: 100%;
+}

@@ -1,0 +1,45 @@
+<html>
+<head>
+
+	<!-- jQuery -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Leaflet -->
+	<link rel="stylesheet" href="css/leaflet.css"/>
+	<script src="js/leaflet.js"></script>
+
+	<!-- Leaflet.offline plugin -->
+	<script src="js/localForage.min.js"></script>
+	<script src="js/leaflet.offline.bundle.js"></script>
+	<link rel="stylesheet" href="css/leaflet.offline.fixed.css"/>
+
+	<!-- Leaflet.Locate plugin -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/L.Control.Locate.fixed.css"/>
+	<script src="js/L.Control.Locate.js"></script>
+
+	<!-- Main -->
+	<link rel="stylesheet" href="css/main.css"/>
+	<script src="js/constants.js"></script>
+	<script src="js/featureManagement.js"></script>
+	<script src="js/main.js"></script>
+
+	<title>Hard Hikes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+</head>
+<body>
+	<div class="alert alert-warning" role="alert" id="statusAlert">
+		<p id="statusAlertText"></p>
+		<div class="progress" id="statusProgressBar">
+		  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%">Loading hikes</div>
+		</div>
+	</div>
+
+	<div id="mapid"></div>
+</body>
+</html>

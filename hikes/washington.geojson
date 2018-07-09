@@ -1,0 +1,73 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Snoqualmie Mountain",
+                "type": "peak",
+                "difficulty": 4,
+                "popupContent": null,
+                "involves": ["route finding"],
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Snow Lake Trailhead",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-121.423550, 47.445441]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-121.416483, 47.458724]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Red Mountain (Snoqualmie)",
+                "type": "peak",
+                "difficulty": 2,
+                "popupContent": null,
+                "involves": ["route finding", "rock scramble"],
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Kendall Katwalk Trailhead - PCH",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-121.413495, 47.427912]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-121.38917, 47.45606]
+            }
+        }
+    ]
+}

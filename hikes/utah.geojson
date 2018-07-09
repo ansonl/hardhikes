@@ -1,0 +1,61 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Little Death Hollow",
+                "popupContent": null,
+                "type": "canyon",
+                "difficulty": 1,
+                "involves": [],
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Trailhead",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-111.180476, 37.784090]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-111.206420, 37.765916]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "North Canyon Trail - The Maze",
+                "popupContent": null,
+                "type": "canyon",
+                "difficulty": 2,
+                "involves": [],
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-110.137137, 38.227734]
+            }
+        }
+    ]
+}

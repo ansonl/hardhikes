@@ -12,6 +12,7 @@ Map usage info:
 <li>Markers represent hikes.</li>
 <li>Clicking and hovering on a marker reveals trailheads (entry points) and related features for a hike. <i>Markers are placed so that you can use the locations as is for navigation.</i></li>
 <li>No trailhead marker indicates that the hike marker is likely already at the trailhead.</li>
+<li>Cache the currently displayed map for offline viewing using the download control on the map left hand side.</li>
 <li>More information on a hike can usually be found by searching the trail name.</li>
 <li>GPX route will be displayed if I recorded one.</li>
 <li>Hikes are continually added to the map as I travel.</li>

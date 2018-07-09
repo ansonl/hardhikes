@@ -197,7 +197,6 @@
                 "popupContent": null,
                 "type": "peak",
                 "difficulty": 2,
-                "involves": ["sand dunes"],
                 "subFeatures": [
                     {
                         "type": "FeatureCollection",

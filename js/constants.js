@@ -10,6 +10,7 @@ var aboutInfo = `A map of hikes that I have done that are at least one of the fo
 Map usage info:
 <ul>
 <li>Markers represent hikes.</li>
+<li>Markers for peaks are colored by difficulty. <span style="color: #2ecc71">Green</span> &rarr; Easier. <span style="color: #e74c3c">Red</span> &rarr; Harder <i>(does not necessarily mean more fun)</i></li>
 <li>Clicking and hovering on a marker reveals trailheads (entry points) and related features for a hike. <i>Markers are placed so that you can use the locations as is for navigation.</i></li>
 <li>No trailhead marker indicates that the hike marker is likely already at the trailhead.</li>
 <li>Cache the currently displayed map for offline viewing using the download control on the map left hand side.</li>

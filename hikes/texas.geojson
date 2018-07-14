@@ -1,0 +1,20 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cadillac Ranch",
+                "popupContent": null,
+                "type": "attraction",
+                "difficulty": 1,
+                "involves": ["photos", "spraypaint"],
+                "albumHash": "wM7UsP9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-101.987132, 35.187312]
+            }
+        }
+    ]
+}

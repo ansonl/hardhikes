@@ -38,11 +38,12 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "El Malpais Caves",
-                "popupContent": null,
+                "name": "El Calderon Area Caves",
+                "popupContent": "El Malpais National Park, Junction Cave, Xenolith Cave",
                 "type": "cave",
                 "difficulty": 0,
                 "involves": ["rock scramble"],
+                "albumHash": "YiCVbTk",
                 "subFeatures": [
                     {
                         "type": "FeatureCollection",

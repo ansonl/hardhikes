@@ -136,6 +136,20 @@
                 "type": "Point",
                 "coordinates": [-78.636447, 37.396059]
             }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Belle Isle",
+                "type": "trail",
+                "difficulty": 1,
+                "popupContent": null,
+                "involves": ["running", "buildings", "rock scramble", "water"]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-77.452293, 37.528776]
+            }
         }
     ]
 }

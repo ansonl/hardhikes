@@ -38,19 +38,19 @@
 	}
 }
 .leaflet-infoWindow .leaflet-title {
-	height:20%;
-	max-height: 100px;
-	padding:0% 10%;
+	height:50%;
+	/*max-height: 100px;*/
+	padding:0% 5%;
 	overflow: hidden;
 	text-align: center;
 }
 .leaflet-infoWindow .leaflet-title * {
-	margin-top: 35px;
+	margin-top: 8px;
 }
 
 
 .leaflet-infoWindow .leaflet-content{
-	height:70%;
+	height:50%;
 	overflow-x: hidden;
 	overflow-y: scroll;
   	border-top:1px solid #d0d0d0;

@@ -51,6 +51,7 @@
                 "type": "peak",
                 "difficulty": 3,
                 "popupContent": null,
+                "albumHash": "mLpl1DS",
                 "subFeatures": [
                     {
                         "type": "FeatureCollection",
@@ -84,6 +85,7 @@
                 "type": "canyon",
                 "difficulty": 1,
                 "involves": ["slot canyon"],
+                "albumHash": "s99riZc",
                 "subFeatures": [
                     {
                         "type": "FeatureCollection",
@@ -115,6 +117,7 @@
             "properties": {
                 "name": "Arroyo Tapiado Mud Caves (Slot Canyon)",
                 "popupContent": null,
+                "albumHash": "WMkK72q",
                 "type": "canyon",
                 "difficulty": 1,
                 "involves": ["slot canyon"]
@@ -132,6 +135,7 @@
                 "type": "canyon",
                 "difficulty": 1,
                 "involves": ["slot canyon"],
+                "albumHash": "FCqqOrq",
                 "subFeatures": [
                     {
                         "type": "FeatureCollection",
@@ -165,6 +169,7 @@
                 "type": "peak",
                 "difficulty": 1,
                 "involves": ["sand dunes"],
+                "albumHash": "TjQyQ9V",
                 "subFeatures": [
                     {
                         "type": "FeatureCollection",
@@ -220,6 +225,55 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [-119.182867, 37.294668]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Eagle Cliff Mine",
+                "popupContent": null,
+                "type": "peak",
+                "difficulty": 2,
+                "involves": ["route finding", "cactus", "rock scramble", "artifacts"],
+                "albumHash": "8ZF0XAF",
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Split Rock Trail",
+                                    "type": "start"
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-116.05581, 34.00949]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-116.06199, 34.02250]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Chasm of Doom",
+                "popupContent": "TBD",
+                "type": "attraction",
+                "difficulty": 0,
+                "involves": ["route finding", "rock scramble"],
+                "albumHash": "Psl1NkB"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-116.168070, 34.0124370]
             }
         }
     ]

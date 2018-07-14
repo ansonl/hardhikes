@@ -81,7 +81,7 @@ function pageReady() {
 	hhMap.addControl(locateControl);
 
 	var infoButtonControl = L.control.infoButton({
-		title: "<h1>Hard Hikes</h1>",
+		title: aboutTitle,
 		html: aboutInfo
 	})
 	hhMap.addControl(infoButtonControl)
@@ -95,8 +95,21 @@ function pageReady() {
 	});
 	hhMap.addLayer(hikesLayer);
 
+
 	//Load hikes
 	loadItems();
+	/*
+	$.ajax({
+		url: 'https://api.imgur.com/3/album/gNaYZ',
+		type: 'GET',
+		headers: {
+			Authorization: 'Client-ID ' + '7229b40e3a2cd97',
+		},
+		success: function(result) {
+			console.log(result)
+		}
+	});
+	*/
 }
 
 function addSaveControls(baseLayer) {
@@ -117,8 +130,8 @@ function addSaveControls(baseLayer) {
 	control.addTo(hhMap);
 	var previousStorageSize;
 	baseLayer.on('storagesize', function(e) {
-	previousStorageSize = e.storagesize
-	document.getElementById('storage-progress').textContent = e.storagesize;
+		previousStorageSize = e.storagesize
+		document.getElementById('storage-progress').textContent = e.storagesize;
 	})
   //events while saving a tile layer
   var progress;

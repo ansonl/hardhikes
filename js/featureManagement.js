@@ -1,3 +1,5 @@
+var testglob;
+
 function loadItems() {
 
 	var progress = 0;
@@ -108,22 +110,114 @@ function pointToLayer(geoJsonPoint, latlng) {
 		})
 	}
 
-	//Set popup with popupContent text
-	var popupText = '';
+	//Set popup with popupContent
+	var popupDiv;
+
+	if (geoJsonPoint.properties && geoJsonPoint.properties.name && geoJsonPoint.properties.name.length > 0) {
+		if (!popupDiv)
+			popupDiv = L.DomUtil.create('div');
+
+		//Create title from name
+			$(popupDiv).append($('<h3/>', {'class': 'popupTitle'}).text(geoJsonPoint.properties.name));
+	}
+
+
 	if (geoJsonPoint.properties && geoJsonPoint.properties.popupContent) {
-		popupText = geoJsonPoint.properties.popupContent
+		if (!popupDiv)
+			popupDiv = L.DomUtil.create('div');
+
+		//Create description from popupContent
+		var desc = L.DomUtil.create('p', null, popupDiv);
+		desc.textContent = geoJsonPoint.properties.popupContent
 	}
 
+	//Create involves list from involves[]
 	if (geoJsonPoint.properties && geoJsonPoint.properties.involves && geoJsonPoint.properties.involves.length > 0) {
-		popupText += (popupText.length > 0 ? '</br>' : '') + '<strong>Involves:</strong><ul>';
+		if (!popupDiv)
+			popupDiv = L.DomUtil.create('div');
+
+		var listDiv = L.DomUtil.create('div', null, popupDiv)
+		L.DomUtil.create('strong', null, listDiv).textContent = 'Involves:';
+
+		var involvesList = L.DomUtil.create('ul', null, listDiv);
 		for (var i = 0; i < geoJsonPoint.properties.involves.length; i++) {
-			popupText += '<li>' + geoJsonPoint.properties.involves[i] + '</li>'
+			L.DomUtil.create('li', null, involvesList).textContent = geoJsonPoint.properties.involves[i]
 		}
-		popupText += '</ul>'
 	}
 
-	if (popupText.length > 0) {
-		createdMarker.bindPopup(popupText);
+	//popupText += '</br><blockquote class="imgur-embed-pub" lang="en" data-id="a/gNaYZ" data-context="false"><a href="//imgur.com/gNaYZ">FEMA location</a></blockquote>'
+
+	var markerMousedOver = false;
+	//Create popup only if we have content for it
+	if (popupDiv) {
+		createdMarker.bindPopup(popupDiv, {
+			minWidth: 300,
+			maxWidth: 1000
+			//maxHeight broken because it only determines scroll bars at dom creation time, not taking into account loaded image height
+		});
+
+		createdMarker.on('popupopen', function(e) {
+			
+			//Check if there is an album associated with this location properties
+			if (!geoJsonPoint.properties || !geoJsonPoint.properties.albumHash || !geoJsonPoint.properties.albumHash.length > 0)
+				return;
+
+			//<i class="fa fa-download" id="save-control" aria-hidden="true" title="Save tiles offline"></i>
+			var loadingPicturesArea = $('<div/>')
+			loadingPicturesArea.append($('<p/>').text(' Fetching album').prepend($('<i/>', { 'class':'fa fa-circle-o-notch fa-spin', 'title':'Fetching album'})))
+			$(popupDiv).append(loadingPicturesArea);
+
+			if (markerMousedOver)
+				return;
+			markerMousedOver = true;
+
+			var albumInfo = $.ajax({
+				url: 'https://api.imgur.com/3/album/' + geoJsonPoint.properties.albumHash,
+				headers: { Authorization: 'Client-ID ' + '7229b40e3a2cd97'},
+				type: 'GET',
+				dataType: 'json'
+			});
+
+			albumInfo.done(function(data) {
+				loadingPicturesArea.remove()
+
+				console.log(data);
+				
+				if (data.data && data.data.images) {
+					//$('<div/>', { 'class':'container-fluid' })
+					var row = $('<div/>', { 'class':'photosArea' })
+					$(popupDiv).append(row);
+	
+					for (var i = 0; i < data.data.images.length && i < 4; i++) {
+						var imageObj = data.data.images[i];
+
+						var imageLink = imageObj.link;
+						var extensionIndex = imageLink.lastIndexOf('.');
+						var squareImageLink = imageLink.slice(0, extensionIndex) + 'b' + imageLink.slice(extensionIndex);
+
+						var imageElement = $('<img/>', { 'class':'photoSquare' }).attr({'src': squareImageLink, 'alt': ''});
+						var imageAnchor = $('<a/>').attr({'href': data.data.link}).append(imageElement);
+
+						row.append(imageAnchor);
+					}
+
+					var buttonText = 'View all ' + data.data.images.length;
+						buttonText += ' Pictures'
+
+					var albumButton = $('<button/>', { 'type':'button', 'class':'btn btn-success' }).text(buttonText);
+					
+					//var buttonSquare = $('<div/>', { 'class':'buttonSquare' }).append(albumButton);
+					var buttonAnchor = $('<a/>', { 'class':'buttonAnchor' }).attr({'href': data.data.link}).append(albumButton);
+					$(popupDiv).append(buttonAnchor);
+					
+				}
+			});
+
+			albumInfo.fail(function(data) {
+				loadingPicturesArea.text(data);
+			});
+
+		});
 	}
 
 	return createdMarker;

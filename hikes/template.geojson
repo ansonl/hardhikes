@@ -9,6 +9,7 @@
                 "type": "peak",
                 "difficulty": DIFFICULTY1TO5,
                 "involves": ["DATA"],
+                "albumHash": null,
                 "subFeatures": [
                     {
                         "type": "FeatureCollection",

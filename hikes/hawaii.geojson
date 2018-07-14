@@ -1,0 +1,72 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Stairway to Heaven/Haiku Steps (Puʻukeahiakahoe)",
+                "popupContent": "\"Closed\" to the public. Information just an internet search away.",
+                "type": "peak",
+                "difficulty": 2,
+                "involves": ["stairs", "route finding"],
+                "albumHash": "K3HlxbV",
+                "subFeatures": [
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-157.823989868,21.3957004547]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Tantalus",
+                "popupContent": "Steep, winding bike route and highway ride down.",
+                "type": "peak",
+                "difficulty": 3,
+                "involves": ["biking"],
+                "albumHash": "V5xrVV7",
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Bike route",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-157.832634, 21.317285]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-157.818065, 21.335887]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hanauma Bay",
+                "popupContent": "Snorkeling with the fish. Picnic with chickens. Don't forget your sunscreen.",
+                "type": "snorkeling",
+                "difficulty": 1,
+                "involves": ["snorkeling", "fish", "chickens"],
+                "albumHash": "An2HcWd"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-157.697123, 21.270780]
+            }
+        }
+    ]
+}

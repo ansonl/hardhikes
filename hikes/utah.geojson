@@ -65,6 +65,7 @@
                 "type": "canyon",
                 "difficulty": 1,
                 "involves": ["slot canyon"],
+                "albumHash": "h0VaJrE",
                 "subFeatures": [
                     {
                         "type": "FeatureCollection",
@@ -99,6 +100,7 @@
                 "type": "canyon",
                 "difficulty": 1,
                 "involves": ["slot canyon"],
+                "albumHash": "h0VaJrE",
                 "subFeatures": [
                     {
                         "type": "FeatureCollection",
@@ -129,7 +131,7 @@
             "type": "Feature",
             "properties": {
                 "name": "Dry Fork Slot Canyon",
-                "popupContent": "TBD",
+                "popupContent": null,
                 "type": "canyon",
                 "difficulty": 0,
                 "involves": ["slot canyon"],
@@ -157,6 +159,41 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [-111.218246, 37.481628]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Angel's Landing",
+                "popupContent": "Zion National Park",
+                "type": "peak",
+                "difficulty": 2,
+                "involves": ["cliffs"],
+                "albumHash": "2bYMWLd",
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                        {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "The Grotto Picnic Area",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-112.951287, 37.259214]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-112.947865, 37.269281]
             }
         }
     ]

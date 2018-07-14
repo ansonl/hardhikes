@@ -163,14 +163,16 @@ function pointToLayer(geoJsonPoint, latlng) {
 			if (!geoJsonPoint.properties || !geoJsonPoint.properties.albumHash || !geoJsonPoint.properties.albumHash.length > 0)
 				return;
 
+			if (markerMousedOver)
+				return;
+			markerMousedOver = true;
+
 			//<i class="fa fa-download" id="save-control" aria-hidden="true" title="Save tiles offline"></i>
 			var loadingPicturesArea = $('<div/>')
 			loadingPicturesArea.append($('<p/>').text(' Fetching album').prepend($('<i/>', { 'class':'fa fa-circle-o-notch fa-spin', 'title':'Fetching album'})))
 			$(popupDiv).append(loadingPicturesArea);
 
-			if (markerMousedOver)
-				return;
-			markerMousedOver = true;
+			
 
 			var albumInfo = $.ajax({
 				url: 'https://api.imgur.com/3/album/' + geoJsonPoint.properties.albumHash,

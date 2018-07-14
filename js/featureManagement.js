@@ -151,8 +151,7 @@ function pointToLayer(geoJsonPoint, latlng) {
 	//Create popup only if we have content for it
 	if (popupDiv) {
 		createdMarker.bindPopup(popupDiv, {
-			minWidth: 300,
-			maxWidth: 1000
+			maxWidth: "auto"
 			//maxHeight broken because it only determines scroll bars at dom creation time, not taking into account loaded image height
 		});
 
@@ -188,18 +187,38 @@ function pointToLayer(geoJsonPoint, latlng) {
 					var row = $('<div/>', { 'class':'photosArea' })
 					$(popupDiv).append(row);
 	
-					for (var i = 0; i < data.data.images.length && i < 4; i++) {
+					for (var i = 0; i < data.data.images.length && i < 4; i++) { (function(index){
 						var imageObj = data.data.images[i];
 
 						var imageLink = imageObj.link;
 						var extensionIndex = imageLink.lastIndexOf('.');
-						var squareImageLink = imageLink.slice(0, extensionIndex) + 'b' + imageLink.slice(extensionIndex);
+						var squareImageLink = imageLink.slice(0, extensionIndex) + 's' + imageLink.slice(extensionIndex);
 
-						var imageElement = $('<img/>', { 'class':'photoSquare' }).attr({'src': squareImageLink, 'alt': ''});
-						var imageAnchor = $('<a/>').attr({'href': data.data.link}).append(imageElement);
+						var loadingElement = $('<i/>', { 'class':'fa fa-circle-o-notch fa-spin', 'title':'Fetching picture'});
+						var imageElement = $('<img/>', { 'class':'photoElement' });
 
+						//Create function now to make closure
+						var bindCall = function() {
+							console.log(index);
+							loadingElement.hide();
+						}
+
+						//pass create function, or else bind will call the function at runtime and get the final variable values
+						imageElement.bind("load", bindCall)
+
+
+						var imageArea = $('<div/>', { 'class':'photoSquare' });
+						var imageAnchor = $('<a/>').attr({'href': data.data.link}).append(imageArea);
+
+						imageArea.append(imageElement);
+						imageArea.append(loadingElement);
 						row.append(imageAnchor);
+
+						imageElement.attr({'src': squareImageLink, 'alt': ''})
+					
+					})(i);
 					}
+						
 
 					var buttonText = 'View all ' + data.data.images.length;
 						buttonText += ' Pictures'
@@ -214,6 +233,7 @@ function pointToLayer(geoJsonPoint, latlng) {
 			});
 
 			albumInfo.fail(function(data) {
+				console.log(data)
 				loadingPicturesArea.text(data);
 			});
 

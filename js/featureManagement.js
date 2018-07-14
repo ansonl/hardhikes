@@ -150,10 +150,12 @@ function pointToLayer(geoJsonPoint, latlng) {
 	var markerMousedOver = false;
 	//Create popup only if we have content for it
 	if (popupDiv) {
-		createdMarker.bindPopup(popupDiv, {
+		var popUp = L.popup( {
 			maxWidth: "auto"
 			//maxHeight broken because it only determines scroll bars at dom creation time, not taking into account loaded image height
-		});
+		}).setContent(popupDiv)
+
+		createdMarker.bindPopup(popUp);
 
 		createdMarker.on('popupopen', function(e) {
 			
@@ -201,6 +203,7 @@ function pointToLayer(geoJsonPoint, latlng) {
 						var bindCall = function() {
 							console.log(index);
 							loadingElement.hide();
+							popUp.update() //adjust popup bounds and offset when image is done loading
 						}
 
 						//pass create function, or else bind will call the function at runtime and get the final variable values

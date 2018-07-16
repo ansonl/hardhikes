@@ -31,7 +31,7 @@ var TileLayerOffline = L.TileLayer.extend(/** @lends  TileLayerOffline */ {
   createTile: function createTile(coords, done) {
     var tile = L.TileLayer.prototype.createTile.call(this, coords, done);
     var url = tile.src;
-    tile.src = undefined;
+    //tile.src = undefined;
     this.setDataUrl(tile, url).then(function (dataurl) {
       tile.src = dataurl;
     }).catch(function () {

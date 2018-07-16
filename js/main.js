@@ -145,6 +145,7 @@ function addSaveControls(baseLayer) {
   });
   baseLayer.on('loadend', function(e) {
     //alert("Saved all tiles");
+    console.log("Saved all tiles");
     previousStorageSize = e.storagesize
     document.getElementById('storage-progress').textContent = e.storagesize;
     document.getElementById('save-control').disabled = false;
@@ -152,6 +153,7 @@ function addSaveControls(baseLayer) {
   });
   baseLayer.on('tilesremoved', function(e) {
     //alert("Removed all tiles");
+    console.log("Removed all tiles");
     previousStorageSize = e.storagesize
     document.getElementById('storage-progress').textContent = e.storagesize;
     document.getElementById('save-control').disabled = false;

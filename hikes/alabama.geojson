@@ -1,0 +1,24 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                    "type": "Point",
+                    "coordinates": [-88.023084, 30.228297]
+                },
+            "properties": {
+                "name": "Fort Morgan",
+                "type": "fort",
+                "elevation": null,
+                "gain": null,
+                "distance": null,
+                "difficulty": 1,
+                "involves": null,
+                "albumHash": null,
+                "popupContent": null,
+                "subFeatures": null
+            }
+        }
+    ]
+}

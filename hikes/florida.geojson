@@ -1,0 +1,80 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                    "type": "Point",
+                    "coordinates": [-87.316937, 30.325891]
+                },
+            "properties": {
+                "name": "Fort McRee",
+                "type": "fort",
+                "elevation": null,
+                "gain": null,
+                "distance": "12 mi",
+                "difficulty": 2,
+                "involves": ["beach"],
+                "albumHash": null,
+                "popupContent": "<a href=\"https://www.nps.gov/guis/learn/historyculture/fort-mcree.htm\">Fort McRee info</a>Walk/run 5 miles to the end of Perdido Key beach to reach the ruins of Fort McRee consisting of Battery Center and Battery Slemmer. Also accessible by boat.",
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Perdido Key",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-87.389786, 30.305296]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                    "type": "Point",
+                    "coordinates": [-87.290185, 30.327277]
+                },
+            "properties": {
+                "name": "Fort Pickens",
+                "type": "fort",
+                "elevation": null,
+                "gain": null,
+                "distance": null,
+                "difficulty": 1,
+                "involves": ["beach"],
+                "albumHash": null,
+                "popupContent": null,
+                "subFeatures": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                    "type": "Point",
+                    "coordinates": [-86.983184, 30.400040]
+                },
+            "properties": {
+                "name": "Gulf Breeze Zoo",
+                "type": "zoo",
+                "elevation": null,
+                "gain": null,
+                "distance": null,
+                "difficulty": 1,
+                "involves": ["birds", "giraffes"],
+                "albumHash": null,
+                "popupContent": "Parakeet and giraffe feeding!",
+                "subFeatures": null
+            }
+        }
+    ]
+}

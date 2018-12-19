@@ -6,7 +6,7 @@
             "properties": {
                 "name": "Mount Mitchell",
                 "type": "peak",
-                "difficulty": 3,
+                "difficulty": 4,
                 "popupContent": null,
                 "subFeatures": [
                     {
@@ -39,6 +39,7 @@
                 "name": "Celo Knob",
                 "type": "peak",
                 "difficulty": 2,
+                "involves": ["hiking", "route finding"],
                 "popupContent": null,
                 "subFeatures": [
                     {

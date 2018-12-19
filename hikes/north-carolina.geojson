@@ -48,6 +48,183 @@
                 "type": "Point",
                 "coordinates": [-81.313238, 35.206975]
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                    "type": "Point",
+                    "coordinates": [-83.174702, 35.444867]
+                },
+            "properties": {
+                "name": "Blackrock Mountain",
+                "type": "peak",
+                "elevation": "5810 ft",
+                "gain": "~3000 ft",
+                "distance": "7mi?",
+                "difficulty": 2,
+                "involves": ["hiking", "route finding"],
+                "albumHash": null,
+                "popupContent": "<a href=\"https://www.discoverjacksonnc.com/outdoors/trails/pinnacle-park-trail/\">Pinnacle Park Trail info and map</a>",
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Pinnacle Park",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-83.191210, 35.422542]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                    "type": "Point",
+                    "coordinates": [-83.257574, 35.705267]
+                },
+            "properties": {
+                "name": "Mt Guyot",
+                "type": "peak",
+                "elevation": "6621 ft",
+                "gain": "5157 ft",
+                "distance": "19.8 mi",
+                "difficulty": 4,
+                "involves": ["hiking", "route finding"],
+                "albumHash": null,
+                "popupContent": "<a href=\"https://www.alltrails.com/trail/us/tennessee/tricorner-knob-and-mount-guyot-via-snake-den-ridge-trail\">AllTrails hike trace and GPX</a><br/>Via Cosby Campground -> Snake Den Ridge Trail -> AT<br/>This is a route to access three other 6000+ footers east of Tricorner Knob. ",
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Tricorner Knob Shelter",
+                                    "type": "shelter",
+                                    "popupContent": "Reserve overnight spots at shelter at GSMNP backcountry reservation site. "
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-83.256613, 35.693943]
+                                }
+                            },
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Snake Den Ridge to AT / F4 Phantom crash site",
+                                    "type": "waypoint",
+                                    "popupContent": "F4 Phantom crash site located just south of the trail fork. "
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-83.238206, 35.726787]
+                                }
+                            },
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Snake Den Ridge - Cosby Campground Trailhead",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-83.210408, 35.753095]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                    "type": "Point",
+                    "coordinates": [-83.088288, 35.480122]
+                },
+            "properties": {
+                "name": "Plott Balsam",
+                "type": "peak",
+                "elevation": "6080 ft",
+                "gain": "2484 ft",
+                "distance": "8.6 mi",
+                "difficulty": 4,
+                "involves": ["hiking", "route finding"],
+                "albumHash": null,
+                "popupContent": "<a href=\"https://www.alltrails.com/explore/recording/recording-oct-29-16-00\">AllTrails hike trace and GPX</a><br/>Blueridge Parkway -> Waterrock Knob -> Browning Knob -> Mount Lyn Lowry -> Plott Balsam<br/>This is a route to access 4 6000+ ft peaks. A fifth 6000+ ft peak, Yellowface, is just across the road from Waterrock Knob stop on Blueridge PKWY",
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Mt Lyn Lowry",
+                                    "type": "peak",
+                                    "elevation": "6240 ft",
+                                    "popupContent": "Continue NE to follow an old 4x4 trail leading to the base of Plott Balsam."
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-83.109242, 35.464174]
+                                }
+                            },
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Browning Knob",
+                                    "type": "peak",
+                                    "elevation": "6207 ft",
+                                    "popupContent": "Cessna crash site with large parts of aircraft remaining just north of peak."
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-83.132052, 35.463108]
+                                }
+                            },
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Waterrock Knob",
+                                    "type": "peak",
+                                    "elevation": "6293 ft",
+                                    "popupContent": "Keep hiking east to find the bush whacked trail."
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-83.137659, 35.464230]
+                                }
+                            },
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Waterrock Knob Ridge Overlook",
+                                    "type": "start",
+                                    "popupContent": "Off of Blue Ridge Parkway. Parking lot. The parkway section was closed due to weather one day and opened up the next day I went. "
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-83.140975, 35.459866]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            }
         }
     ]
 }

@@ -128,7 +128,33 @@ function pointToLayer(geoJsonPoint, latlng) {
 
 		//Create description from popupContent
 		var desc = L.DomUtil.create('p', null, popupDiv);
-		desc.textContent = geoJsonPoint.properties.popupContent
+		desc.innerHTML = geoJsonPoint.properties.popupContent
+	}
+
+	//Create elevation, gain, distance list from elevation/gain/distance
+	if (geoJsonPoint.properties && geoJsonPoint.properties.elevation) {
+		if (!popupDiv)
+			popupDiv = L.DomUtil.create('div');
+
+		var listDiv = L.DomUtil.create('div', null, popupDiv)
+		L.DomUtil.create('strong', null, listDiv).textContent = 'Elevation:';
+		L.DomUtil.create('span', null, listDiv).textContent = geoJsonPoint.properties.elevation;
+	}
+	if (geoJsonPoint.properties && geoJsonPoint.properties.gain) {
+		if (!popupDiv)
+			popupDiv = L.DomUtil.create('div');
+
+		var listDiv = L.DomUtil.create('div', null, popupDiv)
+		L.DomUtil.create('strong', null, listDiv).textContent = 'Gain:';
+		L.DomUtil.create('span', null, listDiv).textContent = geoJsonPoint.properties.gain;
+	}
+	if (geoJsonPoint.properties && geoJsonPoint.properties.distance) {
+		if (!popupDiv)
+			popupDiv = L.DomUtil.create('div');
+
+		var listDiv = L.DomUtil.create('div', null, popupDiv)
+		L.DomUtil.create('strong', null, listDiv).textContent = 'Distance:';
+		L.DomUtil.create('span', null, listDiv).textContent = geoJsonPoint.properties.distance;
 	}
 
 	//Create involves list from involves[]

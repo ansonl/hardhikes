@@ -1,0 +1,67 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                    "type": "Point",
+                    "coordinates": [-82.122348, 36.104577]
+                },
+            "properties": {
+                "name": "Roan High Knob",
+                "type": "peak",
+                "elevation": "285 ft",
+                "gain": "2812 ft",
+                "distance": "9.8 mi",
+                "difficulty": 2,
+                "involves": ["hiking"],
+                "albumHash": null,
+                "popupContent": "<a href=\"https://www.alltrails.com/explore/recording/appalachian-trail-hughes-gap-to-carvers-gap--22\">AllTrails hike trace and GPX</a>",
+                "subFeatures": [
+                    {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Beartown Mountain",
+                                    "type": "peak",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-82.137196, 36.118834]
+                                }
+                            },
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Roan High Mountain Parking ",
+                                    "type": "waypoint",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-82.132319, 36.104546]
+                                }
+                            },
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": "Hughes Gap",
+                                    "type": "start",
+                                    "popupContent": null
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-82.140976, 36.136689]
+                                }
+                            }
+                        ]
+                    }
+                    
+                ]
+            }
+        }
+    ]
+}
